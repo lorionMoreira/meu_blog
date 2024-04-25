@@ -482,6 +482,6 @@ testem.log
 Thumbs.db
 
 #Excluindo DB
-*.db
+#*.db
 *.db-shm
 *.db-wal
