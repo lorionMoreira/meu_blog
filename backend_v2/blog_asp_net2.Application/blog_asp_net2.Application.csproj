@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\blog_asp_net2.Domain\blog_asp_net2.Domain.csproj" />
+    <ProjectReference Include="..\blog_asp_net2.Persistence\blog_asp_net2.Persistence.csproj" />
+  </ItemGroup>
+</Project>
