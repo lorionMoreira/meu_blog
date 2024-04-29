@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace blog_asp_net2.Persistence
+namespace blog_asp_net2.Persistence.Contextos
 {
     public class DataContext : DbContext
     {

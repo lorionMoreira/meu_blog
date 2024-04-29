@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using blog_asp_net2.Persistence;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -13,6 +12,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using blog_asp_net2.Application;
+using blog_asp_net2.Application.Contratos;
+using blog_asp_net2.Persistence;
+using blog_asp_net2.Persistence.Contextos;
+using blog_asp_net2.Persistence.Contratos;
+
 
 namespace blog_asp_net2.API
 {
@@ -34,8 +39,16 @@ namespace blog_asp_net2.API
             Configuration.GetConnectionString("DefaultConnection"),
             ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection"))
             ));
-
+            
             services.AddControllers();
+
+            
+
+            services.AddScoped<IPostService, PostService>();
+            services.AddScoped<IGeralPersist, GeralPersist>();
+            services.AddScoped<IPostPersist, PostPersist>();
+
+            services.AddCors();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "blog_asp_net2.API", Version = "v1" });
@@ -57,6 +70,10 @@ namespace blog_asp_net2.API
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(x => x.AllowAnyHeader()
+                  .AllowAnyMethod()
+                  .AllowAnyOrigin());
 
             app.UseEndpoints(endpoints =>
             {
