@@ -10,7 +10,7 @@ using ProEventos.Application.Contratos;
 using ProEventos.Persistence;
 using ProEventos.Persistence.Contextos;
 using ProEventos.Persistence.Contratos;
-using AutoMapper;
+
 using System;
 using Microsoft.Extensions.FileProviders;
 using System.IO;
@@ -77,7 +77,8 @@ namespace ProEventos.API
                         Newtonsoft.Json.ReferenceLoopHandling.Ignore
                     );
 
-            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddA
+                utoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddScoped<IEventoService, EventoService>();
             services.AddScoped<ILoteService, LoteService>();

@@ -10,8 +10,19 @@ namespace blog_asp_net2.Persistence.Contextos
 
         public DbSet<Post> Posts { get; set; }
 
-        // mencionar as outras entities aqui
+        public DbSet<Comment> Comments { get; set; }
 
-        // aqui tem tambem as definições das tabelas aula: novo contexto
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Post>()
+                .HasMany(e => e.comment)
+                .WithOne(rs => rs.post)
+                .OnDelete(DeleteBehavior.Cascade);
+        }
+
+            // mencionar as outras entities aqui
+
+            // aqui tem tambem as definições das tabelas aula: novo contexto
     }
 }

@@ -40,10 +40,12 @@ namespace blog_asp_net2.API
             ServerVersion.AutoDetect(Configuration.GetConnectionString("DefaultConnection"))
             ));
             
-            services.AddControllers();
+            services.AddControllers()
+                                .AddNewtonsoftJson(x => x.SerializerSettings.ReferenceLoopHandling =
+                        Newtonsoft.Json.ReferenceLoopHandling.Ignore // feito para prevenir loops 
+                    );
 
-            
-
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddScoped<IPostService, PostService>();
             services.AddScoped<IGeralPersist, GeralPersist>();
             services.AddScoped<IPostPersist, PostPersist>();

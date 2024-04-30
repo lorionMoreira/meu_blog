@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using blog_asp_net2.Application.Contratos;
+using blog_asp_net2.Application.Dtos;
 using System.Threading.Tasks;
 using System;
 using blog_asp_net2.Domain;
@@ -56,7 +57,7 @@ namespace blog_asp_net2.API.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Post model)
+        public async Task<IActionResult> Post(PostDto model)
         {
             try
             {
@@ -74,7 +75,7 @@ namespace blog_asp_net2.API.Controllers
 
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(int id, Post model)
+        public async Task<IActionResult> Put(int id, PostDto model)
         {
             try
             {

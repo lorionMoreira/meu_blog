@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace blog_asp_net2.Domain
 {
-    public class Post
+    public class Comment
     {
         public int id { get; set; }
         public string message { get; set; }
 
-        public IEnumerable<Comment> comment { get; set; }
+        public Post post { get; set; }
+
     }
 }

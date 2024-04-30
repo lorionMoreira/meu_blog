@@ -24,12 +24,14 @@ namespace blog_asp_net2.Persistence
 
         public async Task<Post[]> GetAllPostsAsync()
         {
-            return await _context.Posts.ToArrayAsync();
+            IQueryable<Post> query = _context.Posts.Include(e => e.comment);
+
+            return await query.AsNoTracking().ToArrayAsync();
         }
 
         public async Task<Post> GetPostByIdAsync(int postId)
         {
-            return await _context.Posts.FirstOrDefaultAsync(p => p.id == postId);
+            return await _context.Posts.AsNoTracking().FirstOrDefaultAsync(p => p.id == postId);
         }
     }
 }

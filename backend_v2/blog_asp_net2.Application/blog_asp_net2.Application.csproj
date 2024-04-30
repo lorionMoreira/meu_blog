@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\blog_asp_net2.Domain\blog_asp_net2.Domain.csproj" />
     <ProjectReference Include="..\blog_asp_net2.Persistence\blog_asp_net2.Persistence.csproj" />
   </ItemGroup>

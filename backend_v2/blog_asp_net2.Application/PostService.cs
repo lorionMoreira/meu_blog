@@ -7,6 +7,8 @@ using System.Text;
 using System.Threading.Tasks;
 using blog_asp_net2.Persistence.Contratos;
 using Microsoft.Extensions.Logging;
+using AutoMapper;
+using blog_asp_net2.Application.Dtos;
 
 namespace blog_asp_net2.Application
 {
@@ -14,21 +16,27 @@ namespace blog_asp_net2.Application
     {
         private readonly IGeralPersist _geralPersist;
         private readonly IPostPersist _postPersist;
-
-        public PostService(IGeralPersist geralPersist, IPostPersist postPersist)
+        private readonly IMapper _mapper;
+        public PostService(IGeralPersist geralPersist, IPostPersist postPersist, IMapper mapper)
         {
             _postPersist = postPersist;
             _geralPersist = geralPersist;
+            _mapper = mapper;
         }
 
-        public async Task<Post> AddPosts(Post model)
+        public async Task<PostDto> AddPosts(PostDto model)
         {
             try
             {
-                _geralPersist.Add<Post>(model);
+                var post = _mapper.Map<Post>(model);
+
+                _geralPersist.Add<Post>(post);
+
                 if (await _geralPersist.SaveChangesAsync())
                 {
-                    return await _postPersist.GetPostByIdAsync(model.id);
+                    var eventoRetorno = await _postPersist.GetPostByIdAsync(post.id);
+
+                    return _mapper.Map<PostDto>(eventoRetorno);
                 }
                 return null;
             }
@@ -54,7 +62,7 @@ namespace blog_asp_net2.Application
             }
         }
         
-        public async Task<Post> UpdatePost(int postId, Post model)
+        public async Task<PostDto> UpdatePost(int postId, PostDto model)
         {
             try
             {
@@ -63,10 +71,15 @@ namespace blog_asp_net2.Application
 
                 model.id = post.id;
 
-                _geralPersist.Update(model);
+                _mapper.Map(model, post);
+
+                _geralPersist.Update<Post>(post);
+
                 if (await _geralPersist.SaveChangesAsync())
                 {
-                    return await _postPersist.GetPostByIdAsync(model.id);
+
+                    var postRetorno = await _postPersist.GetPostByIdAsync(post.id);
+                    return _mapper.Map<PostDto>(postRetorno);
                 }
                 return null;
             }
@@ -76,14 +89,18 @@ namespace blog_asp_net2.Application
             }
         }
 
-        public async Task<Post[]> GetAllPostsAsync()
+        public async Task<PostDto[]> GetAllPostsAsync()
         {
             try
             {
                 var posts = await _postPersist.GetAllPostsAsync();
+
+
                 if (posts == null) return null;
 
-                return posts;
+                var resultado = _mapper.Map<PostDto[]>(posts);
+
+                return resultado;
             }
             catch (Exception ex)
             {
@@ -91,14 +108,16 @@ namespace blog_asp_net2.Application
             }
         }
 
-        public async Task<Post> GetPostByIdAsync(int postId)
+        public async Task<PostDto> GetPostByIdAsync(int postId)
         {
             try
             {
                 var posts = await _postPersist.GetPostByIdAsync(postId);
                 if (posts == null) return null;
 
-                return posts;
+                var resultado = _mapper.Map<PostDto>(posts);
+
+                return resultado;
             }
             catch (Exception ex)
             {

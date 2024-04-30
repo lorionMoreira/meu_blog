@@ -1,4 +1,5 @@
-﻿using blog_asp_net2.Domain;
+﻿using blog_asp_net2.Application.Dtos;
+using blog_asp_net2.Domain;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -12,13 +13,13 @@ namespace blog_asp_net2.Application.Contratos
     {
 
 
-        Task<Post> AddPosts(Post model);
-        Task<Post> UpdatePost(int eventoId, Post model);
-        Task<Post> GetPostByIdAsync(int postId);
+        Task<PostDto> AddPosts(PostDto model);
+        Task<PostDto> UpdatePost(int eventoId, PostDto model);
+        Task<PostDto> GetPostByIdAsync(int postId);
 
         Task<bool> DeletePost(int PostId);
 
-        Task<Post[]> GetAllPostsAsync();
+        Task<PostDto[]> GetAllPostsAsync();
 
     }
 }

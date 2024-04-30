@@ -16,5 +16,9 @@
   <ItemGroup>
     <ProjectReference Include="..\blog_asp_net2.Domain\blog_asp_net2.Domain.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
   
 </Project>
