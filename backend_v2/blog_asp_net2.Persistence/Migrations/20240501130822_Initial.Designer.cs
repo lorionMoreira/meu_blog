@@ -9,7 +9,7 @@ using blog_asp_net2.Persistence.Contextos;
 namespace blog_asp_net2.Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240429200548_Initial")]
+    [Migration("20240501130822_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

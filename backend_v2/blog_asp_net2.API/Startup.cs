@@ -17,7 +17,7 @@ using blog_asp_net2.Application.Contratos;
 using blog_asp_net2.Persistence;
 using blog_asp_net2.Persistence.Contextos;
 using blog_asp_net2.Persistence.Contratos;
-
+using AutoMapper;
 
 namespace blog_asp_net2.API
 {

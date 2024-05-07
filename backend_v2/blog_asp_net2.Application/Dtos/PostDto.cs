@@ -15,6 +15,6 @@ namespace blog_asp_net2.Application.Dtos
         [Required(ErrorMessage = "O campo {0} é obrigtório.")]
         public string message { get; set; }
 
-        public IEnumerable<Comment> comment { get; set; }
+        public IEnumerable<CommentDto> comment { get; set; }
     }
 }

@@ -26,10 +26,10 @@ namespace blog_asp_net2.API.Controllers
         {
             try
             {
-                var eventos = await _postService.GetAllPostsAsync();
-                if (eventos == null) return NotFound("Nenhum evento encontrado.");
+                var posts = await _postService.GetAllPostsAsync();
+                if (posts == null) return NotFound("Nenhum evento encontrado.");
 
-                return Ok(eventos);
+                return Ok(posts);
             }
             catch (Exception ex)
             {
