@@ -134,9 +134,6 @@ namespace blog_asp_net2.Application
             }
         }
 
-        Task<UserUpdateDto> IAccountService.GetUserByUserNameAsync(string username)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
