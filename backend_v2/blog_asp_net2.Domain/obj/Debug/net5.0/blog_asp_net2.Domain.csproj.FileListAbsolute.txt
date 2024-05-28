@@ -1,0 +1,12 @@
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\bin\Debug\net5.0\blog_asp_net2.Domain.deps.json
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\bin\Debug\net5.0\blog_asp_net2.Domain.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\bin\Debug\net5.0\blog_asp_net2.Domain.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\obj\Debug\net5.0\blog_asp_net2.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\obj\Debug\net5.0\blog_asp_net2.Domain.AssemblyInfoInputs.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\obj\Debug\net5.0\blog_asp_net2.Domain.AssemblyInfo.cs
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\obj\Debug\net5.0\blog_asp_net2.Domain.csproj.CoreCompileInputs.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\obj\Debug\net5.0\blog_asp_net2.Domain.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\obj\Debug\net5.0\ref\blog_asp_net2.Domain.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\obj\Debug\net5.0\blog_asp_net2.Domain.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\obj\Debug\net5.0\blog_asp_net2.Domain.csproj.AssemblyReference.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Domain\bin\Debug\net5.0\ref\blog_asp_net2.Domain.dll

@@ -1,0 +1,17 @@
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\bin\Debug\net5.0\blog_asp_net2.Application.deps.json
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\bin\Debug\net5.0\blog_asp_net2.Application.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\bin\Debug\net5.0\blog_asp_net2.Application.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\bin\Debug\net5.0\blog_asp_net2.Domain.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\bin\Debug\net5.0\blog_asp_net2.Persistence.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\bin\Debug\net5.0\blog_asp_net2.Domain.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\bin\Debug\net5.0\blog_asp_net2.Persistence.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\blog_asp_net2.Application.csproj.AssemblyReference.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\blog_asp_net2.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\blog_asp_net2.Application.AssemblyInfoInputs.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\blog_asp_net2.Application.AssemblyInfo.cs
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\blog_asp_net2.Application.csproj.CoreCompileInputs.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\blog_asp_net2.Application.csproj.CopyComplete
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\blog_asp_net2.Application.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\ref\blog_asp_net2.Application.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\blog_asp_net2.Application.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend_v2\blog_asp_net2.Application\obj\Debug\net5.0\refint\blog_asp_net2.Application.dll

@@ -1,0 +1,17 @@
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Application.deps.json
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Application.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Application.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Domain.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Persistence.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Domain.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\bin\Debug\net5.0\ProEventos.Persistence.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.csproj.AssemblyReference.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.AssemblyInfoInputs.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.AssemblyInfo.cs
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.csproj.CoreCompileInputs.cache
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.csproj.CopyComplete
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ProEventos.Application.pdb
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\ref\ProEventos.Application.dll
+C:\MAMP\htdocs\github_novo\meu_blog\backend\src\ProEventos.Application\obj\Debug\net5.0\refint\ProEventos.Application.dll
