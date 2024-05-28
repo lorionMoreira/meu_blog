@@ -1,0 +1,41 @@
+name: Deploy to Raspberry Pi
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch as needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '14'
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build React app
+      run: npm run build
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+    - name: Copy build files to Raspberry Pi
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.RASPBERRY_PI_HOST }}
+        username: ${{ secrets.RASPBERRY_PI_USERNAME }}
+        password: ${{ secrets.RASPBERRY_PI_PASSWORD }}
+        port: 22
+        source: build/  # Adjust the source path based on your build output
+        target: /var/www/html  # Adjust the target path on your Raspberry Pi
